@@ -18,13 +18,22 @@
 
       document.addEventListener( "DOMContentLoaded", function() {
         var video = document.getElementById( "video" ),
-            googlemap = document.getElementById( "google" );
+            googlemap = document.getElementById( "google" ),
+            sxs = document.getElementById( "sxs" );
 
         google.addEventListener( "mousedown", function( e ){
           video.pause();
         }, false );
 
         google.addEventListener( "mouseup", function( e ){
+          video.play();
+        }, false );
+        
+        sxs.addEventListener( "mouseover", function( e ){
+          video.pause();
+        }, false );
+
+        sxs.addEventListener( "mouseout", function( e ){
           video.play();
         }, false );
       }, false );

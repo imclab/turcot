@@ -74,13 +74,13 @@ document.addEventListener( "DOMContentLoaded", function () {
     text: "<h2><span>Hakozaki Junction,  Tokyo, Japan</span></h2>"
   });
   pop.d3({
-    start: 93,
-    end: 103,
+    start: 98,
+    end: 107,
     target: "d3"
   });
   pop.googlemap({
-    start: 93,
-    end: 103,
+    start: 98,
+    end: 107,
     type: "ROADMAP",
     target: "sxs",
     lat: 45.463442,
