@@ -8,11 +8,27 @@
       }
     </style>
     <script src="popcorn.min.js"></script>
+    <script src="http://popcornjs.org/code/plugins/footnote/popcorn.footnote.js"></script>
     <script src="popcorn.subtitle.js"></script>
     <script src="popcorn.googlemap.js"></script>
     <script src="d3.v2.js"></script>
     <script src="popcorn.d3.js"></script>
     <script src="turcot.js"></script>
+    <script>
+
+      document.addEventListener( "DOMContentLoaded", function() {
+        var video = document.getElementById( "video" ),
+            googlemap = document.getElementById( "google" );
+
+        google.addEventListener( "mousedown", function( e ){
+          video.pause();
+        }, false );
+
+        google.addEventListener( "mouseup", function( e ){
+          video.play();
+        }, false );
+      }, false );
+    </script>
     <style type="text/css">
       body {
         margin: 0px auto;
@@ -27,7 +43,7 @@
         position: absolute;
         top:0;
         left: 0;
-        opacity: 0.5;
+        opacity: 0.6;
         height: 100%;
         width: 100%;
         display: none;
@@ -52,6 +68,24 @@
         width: 50%;
         display: none;
       }
+      #title {
+   position: relative;
+}
+
+h2 {
+   position: absolute;
+   bottom: 80px;
+   left: 5%;
+   width: 100%;
+}
+h2 span {
+   color: white;
+   font: bold 24px/45px Helvetica, Sans-Serif;
+   letter-spacing: -1px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+}
     </style>
   </head>
   
@@ -65,6 +99,7 @@
     <div id="google"></div>
     <div id="d3"></div>
     <div id="sxs"></div>
+    <div id="titles"></div>
   </body>
 
 </html>
