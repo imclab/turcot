@@ -3,8 +3,8 @@ document.addEventListener( "DOMContentLoaded", function () {
 
   /* turcot */
   pop.googlemap({
-    start: 53,
-    end: 59,
+    start: 51,
+    end: 57,
     type: "STAMEN-TONER",
     target: "google",
     lat: 45.467777,
@@ -12,6 +12,12 @@ document.addEventListener( "DOMContentLoaded", function () {
     zoom: "15",
     heading: "0",
     pitch: "1"
+  });
+  pop.footnote({
+    start: 51,
+    end: 57,
+    target: "titles",
+    text: "<h2><span>Turcot Interchange</span></h2>"
   });
   /* springfield */
   pop.googlemap({
@@ -25,6 +31,12 @@ document.addEventListener( "DOMContentLoaded", function () {
     heading: "0",
     pitch: "1"
   });
+  pop.footnote({
+    start: 23,
+    end: 29,
+    target: "titles",
+    text: "<h2><span>Springfield Highway</span></h2>"
+  });
   /* houston */
   pop.googlemap({
     start: 30,
@@ -37,6 +49,12 @@ document.addEventListener( "DOMContentLoaded", function () {
     heading: "0",
     pitch: "1"
   });
+  pop.footnote({
+    start: 30,
+    end: 36,
+    target: "titles",
+    text: "<h2><span>Interstate 10 Highway Interchange Houston</span></h2>"
+  });
   /* japan */
   pop.googlemap({
     start: 37,
@@ -48,6 +66,12 @@ document.addEventListener( "DOMContentLoaded", function () {
     zoom: "16",
     heading: "0",
     pitch: "1"
+  });
+  pop.footnote({
+    start: 37,
+    end: 43,
+    target: "titles",
+    text: "<h2><span>Hakozaki Junction,  Tokyo, Japan</span></h2>"
   });
   pop.d3({
     start: 93,
