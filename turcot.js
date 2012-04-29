@@ -88,7 +88,7 @@ document.addEventListener( "DOMContentLoaded", function () {
     zoom: "12",
     heading: "0",
     pitch: "1",
-    kml: "http://hothacks.butyr.org/turcot.kml"
+    kml: "http://mjschranz.github.com/turcot/turcot.kml"
   });
   /* Subtitles */
   pop.subtitle({
